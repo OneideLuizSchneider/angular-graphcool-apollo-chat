@@ -11,7 +11,6 @@ type User @model {
   chats: [Chat!]! @relation(name: "UsersOnChats")
   messages: [Message!]! @relation(name: "MessageOnUser")
   photo: File @relation(name: "UserPhoto")
-
 }
 
 type Chat @model {
